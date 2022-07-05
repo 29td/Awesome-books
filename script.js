@@ -8,7 +8,7 @@ class Book {
   }
 }
 
-// Storage Class: Handles local storage of books
+// Store Class: Handles local storage of books
 class Storage {
   // Receives Books
   static getBooks() {
@@ -27,6 +27,20 @@ class Storage {
     const books = Storage.getBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
+    window.location.reload();
+  }
+
+// Event remove a Book
+  static removeBook(title) {
+    const books = Storage.getBooks();
+
+    books.forEach((book, index) => {
+      if (book.title === title) {
+        books.splice(index, 1);
+      }
+    });
+
+    localStorage.setItem('books', JSON.stringify(books));
   }
 }
 
@@ -38,7 +52,7 @@ class UI {
   }
 
   static addBookToList(book) {
-    const list = document.querySelector('.book-collection');
+    const list = document.querySelector('#book-collection');
     const addedbook = document.createElement('div');
     addedbook.innerHTML = `
           <p>${book.title}</p>
@@ -50,9 +64,9 @@ class UI {
   }
 
   // Event: Deletes a Book
-  static deleteBook(del) {
-    if (del.classList.contains('delete')) {
-      del.parentElement.remove();
+  static deleteBook(el) {
+    if (el.classList.contains('delete')) {
+      el.parentElement.remove();
     }
   }
 
@@ -75,9 +89,13 @@ document.querySelector('#form').addEventListener('submit', () => {
 });
 
 // Event: Deletes a Book
-document.querySelector('.book-collection').addEventListener('click', (e) => {
+document.querySelector('#book-collection').addEventListener('click', (e) => {
+
+// Remove book from UI
   UI.deleteBook(e.target);
-  Storage.removeBook(e.target.parentElement.previousElementSibling.textContent);
+
+// Remove book from Store
+Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
 
 /* eslint-disable max-classes-per-file */
