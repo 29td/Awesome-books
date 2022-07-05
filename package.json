@@ -1,0 +1,35 @@
+{
+  "name": "awesome-books",
+  "version": "1.0.0",
+  "description": "-The current project is an Awesome Booklist that we worked on together with my Coding Partner. The project has two functionalities:\r * Allows the user to add a book.\r * Allows a user to delete or remove a book.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/29td/Awesome-books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/29td/Awesome-books/issues"
+  },
+  "homepage": "https://github.com/29td/Awesome-books#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+<<<<<<< HEAD
+    "hint": "^7.0.1",
+=======
+    "hint": "^6.2.0",
+>>>>>>> 44a7ad2592117ef8495151f2ee49e26934e4ea05
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
