@@ -50,9 +50,9 @@ class UI {
   }
 
   // Event: Deletes a Book
-  static deleteBook(el) {
-    if (el.classList.contains('delete')) {
-      el.parentElement.remove();
+  static deleteBook(del) {
+    if (del.classList.contains('delete')) {
+      del.parentElement.remove();
     }
   }
 
