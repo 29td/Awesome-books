@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Title -->
-    <h1>Awesome Books</h1>
+    
+    <h1 class="books">All awesome books</h1>
 
     <!-- Dynamic Section -->
     <div id="book-collection">
@@ -17,18 +19,21 @@
     </div>
 
     <!-- The form section -->
-    <div class="forms-section">
-    <form id="form">
-        <div class="text-input">
-            <input type="text" id="title" name="title" placeholder="Title" required>
-        </div>
+    <nav class="forms-section">
+        <hr>
+        <h2>Add a new book</h2>
+        <form id="form">
+            <div class="text-input">
+                <input type="text" id="title" name="title" placeholder="Title" required>
+            </div>
 
-        <div class="text-input">
-            <input type="text" id="author" name="author" placeholder="Author" required>
-        </div>
-        <button type="submit">Add</button>
-    </form>
-</div>
+            <div class="text-input">
+                <input type="text" id="author" name="author" placeholder="Author" required>
+            </div>
+            <button type="submit" class="addbtn">Add</button>
+        </form>
+    </nav>
+
 <script src="script.js"></script>
 </body>
 </html>

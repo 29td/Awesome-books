@@ -1,8 +1,83 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+.books {
+  margin-left: 39%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
+#book-collection {
+  border: 2px solid #000;
+  margin: auto;
+  background: #fff;
+  width: 475px;
+  height: fit-content;
+}
+
+.display-collection {
+  display: flex;
+  flex-direction: row;
+  background-color: silver;
+  margin: 12px;
+}
+
+.display-collection button {
+  margin-left: 42%;
+}
+
+.book-info {
+  width: 25%;
+}
+
+#book-info-author {
+  margin-left: -50px;
+}
+
+span {
+  margin: 8px;
+}
+
+.forms-section {
+  margin-left: 40%;
+  margin-top: 3%;
+}
+
+h2 {
+  margin-left: 68px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .text-input {
+  height: 20px;
   margin-bottom: 12px;
+}
+
+.addbtn {
+  border: 2px solid;
+  margin-left: 34.4%;
+
+}
+
+#title {
+  height: 20px;
+  border: 1px solid;
+  width: 50vh;
+}
+
+#author {
+  height: 20px;
+  border: 1px solid;
+  width: 50vh;
+}
+
+.delete {
+  width: 17%;
+  float: right;
+  border: 2px solid #000; 
+  box-shadow: 0 4px 5px;
 }
