@@ -1,31 +1,118 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-.text-input {
-  height: 10px;
+  box-sizing: border-box;
 }
 
 .books {
+  margin-left: 33%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
+#book-collection {
+  border: 2px solid #000;
+  margin: auto;
+  background: #fff;
+  width: 475px;
+  height: fit-content;
+}
+
+.display-collection {
+  display: flex;
+  justify-content: space-between;
+  background-color: silver;
+  margin: 12px;
+}
+
+#book-list-author {
+  margin-left: -40%;
+}
+
+span {
+  margin: 12px;
+}
+
+.forms-section {
+  margin-left: 32%;
+  margin-top: 3%;
+}
+
+hr {
+  border: 1px solid;
+  width: 100px;
+  margin-left: 98px;
+}
+
+h2 {
+  margin-left: 68px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  height: 20px;
+  margin-bottom: 12px;
+}
+
+.addbtn {
+  border: 2px solid;
+  margin-left: 52.5%;
+
+}
+
+#title {
+  height: 20px;
+  border: 1px solid;
+  width: 50vh;
+}
+
+#author {
+  height: 20px;
+  /* margin-left: -30px; */
+  border: 1px solid;
+  width: 50vh;
+}
+
+.delete {
+ border: 2px solid #000; 
+ box-shadow: 0 4px 5px;
+}
+
+
+/* .text-input {
+  height: 10px;
+  margin-top: 40px;
+  margin-left: 250px;
+} */
+
+/* .books {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #book-collection {
-  background-color: gray;
+  background-color: mistyrose;
   padding: 0;
   margin-left: 300px;
   width: 575px;
   height: 200px;
   border: 1px solid;
+  display: flex;
+  justify-content: space-between;
 }
 
-div {
-  margin-top: 40px;
-  margin-left: 250px;
+#book-list {
+  display: inline;
+  background-color: silver;
 }
+
+.delete {
+  margin-left: -23%;
+}
+
+
 
 #form {
   margin-top: 30px;
@@ -33,19 +120,9 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  /* margin-left: 50px; */
+  
 }
 
-.delete {
-  display: flex;
-  margin-top: -20px;
-  margin-left: 250px;
-}
-
-.book-list {
-  background-color: gray;
-  display: inline;
-}
 
 hr {
   border: 1px solid;
@@ -72,4 +149,4 @@ hr {
   margin-top: 20px;
   border: 2px solid;
   margin-left: 320px;
-}
+} */ 
