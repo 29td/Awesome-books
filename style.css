@@ -5,7 +5,7 @@
 }
 
 .books {
-  margin-left: 33%;
+  margin-left: 39%;
   margin-bottom: 1%;
   margin-top: 3%;
 }
@@ -20,28 +20,30 @@
 
 .display-collection {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   background-color: silver;
   margin: 12px;
 }
 
-#book-list-author {
-  margin-left: -40%;
+.display-collection button {
+  margin-left: 42%;
+}
+
+.book-info {
+  width: 25%;
+}
+
+#book-info-author {
+  margin-left: -50px;
 }
 
 span {
-  margin: 12px;
+  margin: 8px;
 }
 
 .forms-section {
-  margin-left: 32%;
+  margin-left: 40%;
   margin-top: 3%;
-}
-
-hr {
-  border: 1px solid;
-  width: 100px;
-  margin-left: 98px;
 }
 
 h2 {
@@ -57,7 +59,7 @@ h2 {
 
 .addbtn {
   border: 2px solid;
-  margin-left: 52.5%;
+  margin-left: 34.4%;
 
 }
 
@@ -69,84 +71,13 @@ h2 {
 
 #author {
   height: 20px;
-  /* margin-left: -30px; */
   border: 1px solid;
   width: 50vh;
 }
 
 .delete {
- border: 2px solid #000; 
- box-shadow: 0 4px 5px;
+  width: 17%;
+  float: right;
+  border: 2px solid #000; 
+  box-shadow: 0 4px 5px;
 }
-
-
-/* .text-input {
-  height: 10px;
-  margin-top: 40px;
-  margin-left: 250px;
-} */
-
-/* .books {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#book-collection {
-  background-color: mistyrose;
-  padding: 0;
-  margin-left: 300px;
-  width: 575px;
-  height: 200px;
-  border: 1px solid;
-  display: flex;
-  justify-content: space-between;
-}
-
-#book-list {
-  display: inline;
-  background-color: silver;
-}
-
-.delete {
-  margin-left: -23%;
-}
-
-
-
-#form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  
-}
-
-
-hr {
-  border: 1px solid;
-  margin-left: 630px;
-  margin-top: 100px;
-  width: 100px;
-}
-
-#title {
-  height: 20px;
-  margin-right: 230px;
-  border: 1px solid;
-  width: 50vh;
-}
-
-#author {
-  height: 20px;
-  margin-right: 230px;
-  border: 1px solid;
-  width: 50vh;
-}
-
-.addbtn {
-  margin-top: 20px;
-  border: 2px solid;
-  margin-left: 320px;
-} */ 
