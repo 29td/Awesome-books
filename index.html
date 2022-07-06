@@ -9,16 +9,18 @@
 </head>
 <body>
     <!-- Title -->
-    <h1>Awesome Books</h1>
+    <h1 class="books">All awesome books</h1>
 
     <!-- Dynamic Section -->
     <div id="book-collection">
         <!-- Added content from JS -->
     </div>
+    <hr>
 
     <!-- The form section -->
-    <div class="forms-section">
+    <nav class="forms-section">
     <form id="form">
+        <h1>Add a new book</h1>
         <div class="text-input">
             <input type="text" id="title" name="title" placeholder="Title" required>
         </div>
@@ -26,9 +28,9 @@
         <div class="text-input">
             <input type="text" id="author" name="author" placeholder="Author" required>
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" class="addbtn">Add</button>
     </form>
-</div>
+</nav>
 <script src="script.js"></script>
 </body>
 </html>

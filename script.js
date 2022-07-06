@@ -55,10 +55,9 @@ class UI {
     const list = document.querySelector('#book-collection');
     const addedbook = document.createElement('div');
     addedbook.innerHTML = `
-          <p>${book.title}</p>
-          <p>${book.author}</p>
+          <p class="book-list">${book.title}</p>
+          <p class="book-list">${book.author}</p>
           <button type="submit" class="delete">Remove</button>
-          <hr>
         `;
     list.appendChild(addedbook);
   }
