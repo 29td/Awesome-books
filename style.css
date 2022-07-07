@@ -42,7 +42,10 @@ span {
 }
 
 .forms-section {
-  margin-left: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
   margin-top: 3%;
 }
 
@@ -59,7 +62,7 @@ h2 {
 
 .addbtn {
   border: 2px solid;
-  margin-left: 34.4%;
+  margin-left: 90.4%;
 
 }
 
@@ -82,37 +85,92 @@ h2 {
   box-shadow: 0 4px 5px;
 }
 
-.navigation {
-  background-color: rgba(128, 128, 128, 0.644);
-  height: 80px;
+.awesomeB {
+  background-color: gray;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 550px;
+  height: 30px;
 }
 
-.navigation p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.copyR {
+  border: 2px solid #000 ;
+  margin-top: 50px;
+  margin-left: -50PX;
+  width: 400px;
+  height: 30px;
 }
 
-.icons {
-  margin-top: 15px;
-  justify-content: center;
-}
-
-.search-bar {
-  justify-content: center;
+.linked {
+  width: 100%;
 }
 
 .linked ul {
+  display: flex;
+  padding: 10px;
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   /* gap: 20px; */
 }
 
 .linked ul li {
+  height: 30px;
   border: 1px solid;
-  text-decoration: none;
-  color: #000;
   list-style: none;
 
+}
+
+.linked ul li a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.copyright {
+  border: 2px solid #000;
+  width: 480px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.new {
+  background-color: gray;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 550px;
+  height: 30px;
+
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-info h1 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.contact-info input {
+  border: 2px solid #000 ;
+  margin-top: 50px;
+  width: 400px;
+  height: 30px;
+}
+
+.info {
+  background-color: gray;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 550px;
+  height: 30px;
 }

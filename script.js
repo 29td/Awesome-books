@@ -44,26 +44,13 @@ class Storage {
   }
 }
 
-// navigation bar
-const header = document.querySelector('header');
-header.innerHTML = `    <nav class="navigation">
-<p>A web page</p>
-<img src="./assets/icons/foward.svg" alt="img" class="icons"/>
-<img src="./assets/icons/foward.svg" alt="img" class="icons"/>
-<img src="./assets/icons/cross.svg" alt="img" class="icons"/>
-<img src="./assets/icons/home.svg" alt="img" class="icons"/>
-<input type="text" placeholder="https://" class="search-bar"></input>
-<input type="search" placeholder="search"></input>
-</nav>
-`;
-
 // linking items
 const items = document.querySelector('.linked');
 
 items.innerHTML = `       <ul>
-<a href="#"><li>Awesome books<span>list</span></li></a>
-<a href="#"><li>Add new</li></a>
-<a href="#"><li>Contact</li></a>
+<li>Awesome books<span><a href="#book-collection">list</a></span></li>
+<li><a href="#add-books">Add new</a></li>
+<li><a href="#contactF">Contact</a></li>
 </ul>
 `;
 
@@ -122,5 +109,18 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
 // Remove book from Store
 Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
+
+// Contact section
+const contact = document.querySelector('.contact-info');
+contact.innerHTML =`<h1>Contact Information</h1>
+<p>Do you have any questions or you just want to say "Hello"?<br>
+you can reach out to us!</p>
+<ul>
+<li>Our e-mail: Reggie&Collins@gmail.com</li>
+<li>Our phone number: +235 667 233 4471</li>
+<li>Our address: Car Str 173A Johannesburg SA</li>
+</ul>
+<input type="text" placeholder="Copyright  ..."></input>
+`;
 
 /* eslint-disable max-classes-per-file */
