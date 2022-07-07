@@ -44,16 +44,6 @@ class Storage {
   }
 }
 
-// linking items
-const items = document.querySelector('.linked');
-
-items.innerHTML = `       <ul>
-<li>Awesome books<span><a href="#book-collection">list</a></span></li>
-<li><a href="#add-books">Add new</a></li>
-<li><a href="#contactF">Contact</a></li>
-</ul>
-`;
-
 // UI Class: Displays listed Books
 class UI {
   static displayBooks() {
@@ -110,17 +100,47 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
 Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
 
-// Contact section
-const contact = document.querySelector('.contact-info');
-contact.innerHTML =`<h1>Contact Information</h1>
-<p>Do you have any questions or you just want to say "Hello"?<br>
-you can reach out to us!</p>
-<ul>
-<li>Our e-mail: Reggie&Collins@gmail.com</li>
-<li>Our phone number: +235 667 233 4471</li>
-<li>Our address: Car Str 173A Johannesburg SA</li>
-</ul>
-<input type="text" placeholder="Copyright  ..."></input>
-`;
+// *****************Variables for targetting "bookList, "addaBook", and "contactDetails"***************
+const bookCollection = document.querySelector('#book-collection');
+const addaBook = document.querySelector('#add-books');
+const contactDetails = document.querySelector('#contact-display');
+const listLink = document.querySelector('#list-link');
+
+// *****************Displaying the Book List page when clicking "List"***************
+listLink.addEventListener('click', () => {
+  bookCollection.style.display = 'block';
+  addaBook.style.display = 'none';
+  contactDetails.style.display = 'none';
+});
+
+window.addEventListener('load', () => {
+  bookCollection.style.display = 'block';
+  addaBook.style.display = 'none';
+  contactDetails.style.display = 'none';
+});
+
+// *****************Displaying the Add a Book page when clicking "Add New"***************
+const addNewLink = document.querySelector('#add-new-link');
+addNewLink.addEventListener('click', () => {
+  addaBook.style.display = 'flex';
+  bookCollection.style.display = 'none';
+  contactDetails.style.display = 'none';
+});
+
+// *****************Displaying the Contact page when clicking "Contact"***************
+const contactLink = document.querySelector('#contact-link');
+contactLink.addEventListener('click', () => {
+  contactDetails.style.display = 'block';
+  bookCollection.style.display = 'none';
+  addaBook.style.display = 'none';
+});
+
+// *****************Displaying the Book List page when clicking "Add" Button***************
+const addButtonLink = document.querySelector('.addbtn');
+addButtonLink.addEventListener('click', () => {
+  bookCollection.style.display = 'block';
+  contactDetails.style.display = 'none';
+  addaBook.style.display = 'none';
+});
 
 /* eslint-disable max-classes-per-file */

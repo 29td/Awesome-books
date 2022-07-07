@@ -9,29 +9,29 @@
 </head>
 <body>
 
+<!-- **************The Header Section************** -->
+<header>
+    <nav class="navbar-section">
+        <a href="#" class="home">Awesome Books</a>
+        <ul class="nav-group">
+            <li class="nav-items" id="list-link"><a href="#">List</a></li>
+            <li class="nav-items" id="add-new-link"><a href="#">Add New</a></li>
+            <li class="nav-items" id="contact-link"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-   <div class="linked">
-       <!-- link items -->
-
-   </div>
-
-
-    <!-- Title -->
+<main>
     
     <h1 class="books">All awesome books</h1>
 
-    <!-- Dynamic Section -->
-    <div id="book-collection">
+    <!-- **************The Dynamic Section for Displaying Book List************** -->
+    <div id="book-collection"> 
         <!-- Added content from JS -->
-
     </div>
-    <input type="text" placeholder="Copyright  ..." class="copyright"></input>
-    <footer class="awesomeB"></footer>
 
-
-    <!-- The form section -->
+    <!-- **************The Form Section************** -->
     <div class="forms-section" id="add-books">
-        <!-- <hr> -->
         <h2>Add a new book</h2>
         <form id="form">
             <div class="text-input">
@@ -43,16 +43,33 @@
             </div>
             <button type="submit" class="addbtn">Add</button>
         </form>
-        <input type="text" class="copyR" placeholder="Copyright  ..."></input>
     </div>
-    <footer class="new"></footer>
 
+    <!-- **************The Form Section************** -->
 
-    <div class="contact-info" id="contactF">
-    <!-- Contact section -->
-</div>
-<footer class="info"></footer>
+    <div id="contact-display">
+        <div class="contact-section">
+            <h2>Contact Information</h2>
 
+            <div class="contact-text">
+                <p>Do you have any questions or you just want to say "Hello"?</p>
+                <p>You can reach out to us!</p>
+            </div>
+
+            <ul>
+                <li>Our e-mail: Reggie&Collins@gmail.com</li>
+                <li>Our phone numbers are: +235 667 233 4471</li>
+                <li>Our address: Car Str 173A Johannesburg SA</li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+
+<!-- **************The Footer Section************** -->
+<footer class="footer-section">
+    <p>Copyright</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
