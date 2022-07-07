@@ -81,3 +81,38 @@ h2 {
   border: 2px solid #000; 
   box-shadow: 0 4px 5px;
 }
+
+.navigation {
+  background-color: rgba(128, 128, 128, 0.644);
+  height: 80px;
+}
+
+.navigation p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.search-bar {
+  justify-content: center;
+}
+
+.linked ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  /* gap: 20px; */
+}
+
+.linked ul li {
+  border: 1px solid;
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+
+}

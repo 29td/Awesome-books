@@ -44,6 +44,29 @@ class Storage {
   }
 }
 
+// navigation bar
+const header = document.querySelector('header');
+header.innerHTML = `    <nav class="navigation">
+<p>A web page</p>
+<img src="./assets/icons/foward.svg" alt="img" class="icons"/>
+<img src="./assets/icons/foward.svg" alt="img" class="icons"/>
+<img src="./assets/icons/cross.svg" alt="img" class="icons"/>
+<img src="./assets/icons/home.svg" alt="img" class="icons"/>
+<input type="text" placeholder="https://" class="search-bar"></input>
+<input type="search" placeholder="search"></input>
+</nav>
+`;
+
+// linking items
+const items = document.querySelector('.linked');
+
+items.innerHTML = `       <ul>
+<a href="#"><li>Awesome books<span>list</span></li></a>
+<a href="#"><li>Add new</li></a>
+<a href="#"><li>Contact</li></a>
+</ul>
+`;
+
 // UI Class: Displays listed Books
 class UI {
   static displayBooks() {
