@@ -12,7 +12,7 @@
 ### Getting Started
 For you to get a local template, please follow the folowing prerequisite steps:
 
-Access the live source on - https://github.com/Carshy/Awesome-Books
+Access the live source on - [Live Demo](https://github.com/Carshy/Awesome-Books)
 Copy the **https** or **SSH** address on the code
 Clone the repository using your favorite code editor   
 
