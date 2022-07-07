@@ -105,6 +105,7 @@ const bookCollection = document.querySelector('#book-collection');
 const addaBook = document.querySelector('#add-books');
 const contactDetails = document.querySelector('#contact-display');
 const listLink = document.querySelector('#list-link');
+const titleDismiss = document.querySelector('.books');
 
 // *****************Displaying the Book List page when clicking "List"***************
 listLink.addEventListener('click', () => {
@@ -125,6 +126,7 @@ addNewLink.addEventListener('click', () => {
   addaBook.style.display = 'flex';
   bookCollection.style.display = 'none';
   contactDetails.style.display = 'none';
+  titleDismiss.style.display = 'none';
 });
 
 // *****************Displaying the Contact page when clicking "Contact"***************
@@ -133,6 +135,7 @@ contactLink.addEventListener('click', () => {
   contactDetails.style.display = 'block';
   bookCollection.style.display = 'none';
   addaBook.style.display = 'none';
+  titleDismiss.style.display = 'none';
 });
 
 // *****************Displaying the Book List page when clicking "Add" Button***************
