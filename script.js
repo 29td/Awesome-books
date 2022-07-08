@@ -100,4 +100,50 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
 Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
 
+// *****************Variables for targetting "bookList, "addaBook", and "contactDetails"***************
+const bookCollection = document.querySelector('#book-collection');
+const addaBook = document.querySelector('#add-books');
+const contactDetails = document.querySelector('#contact-display');
+const listLink = document.querySelector('#list-link');
+const titleDismiss = document.querySelector('.books');
+
+// *****************Displaying the Book List page when clicking "List"***************
+listLink.addEventListener('click', () => {
+  bookCollection.style.display = 'block';
+  addaBook.style.display = 'none';
+  contactDetails.style.display = 'none';
+});
+
+window.addEventListener('load', () => {
+  bookCollection.style.display = 'block';
+  addaBook.style.display = 'none';
+  contactDetails.style.display = 'none';
+});
+
+// *****************Displaying the Add a Book page when clicking "Add New"***************
+const addNewLink = document.querySelector('#add-new-link');
+addNewLink.addEventListener('click', () => {
+  addaBook.style.display = 'flex';
+  bookCollection.style.display = 'none';
+  contactDetails.style.display = 'none';
+  titleDismiss.style.display = 'none';
+});
+
+// *****************Displaying the Contact page when clicking "Contact"***************
+const contactLink = document.querySelector('#contact-link');
+contactLink.addEventListener('click', () => {
+  contactDetails.style.display = 'block';
+  bookCollection.style.display = 'none';
+  addaBook.style.display = 'none';
+  titleDismiss.style.display = 'none';
+});
+
+// *****************Displaying the Book List page when clicking "Add" Button***************
+const addButtonLink = document.querySelector('.addbtn');
+addButtonLink.addEventListener('click', () => {
+  bookCollection.style.display = 'block';
+  contactDetails.style.display = 'none';
+  addaBook.style.display = 'none';
+});
+
 /* eslint-disable max-classes-per-file */
